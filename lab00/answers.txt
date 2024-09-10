@@ -1,4 +1,9 @@
-1.
-2.
-3.
-4.
+1. `ls -l`
+2. `mv [source] [destination]`
+3. `chmod ...` // A little bit complex to show here.
+4. `pwd`
+5. `ping [hostname]`
+6. `grep -r "keyword" [directory]`
+7. `top`
+8. `kill [PID]`
+9. `diff [file] [file]`
