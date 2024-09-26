@@ -1,7 +1,7 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1. `clean` part
+2. `all:` part.
+3. gcc
+4. c99
+5. use `FOO = ...`
+6. Based on my liitle search from Internet, it's an open-source operatiion system which is the ancestor of OSs on Apple product.
+7. line 32
