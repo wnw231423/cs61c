@@ -42,23 +42,23 @@ main:
     la s1, source
     la s2, dest
 loop:
-    slli s3, t0, 2
-    add t1, s1, s3
-    lw t2, 0(t1)
+    slli s3, t0, 2      # s3 is k
+    add t1, s1, s3  # t1 is the addr of source
+    lw t2, 0(t1)       # source[k]
     beq t2, x0, exit
     add a0, x0, t2
     addi sp, sp, -8
     sw t0, 0(sp)
     sw t2, 4(sp)
     jal fun
-    lw t0, 0(sp)
-    lw t2, 4(sp)
+    lw t0, 0(sp)   # current k need to be saved.
+    lw t2, 4(sp)   # source[k] need to be saved.
     addi sp, sp, 8
-    add t2, x0, a0
-    add t3, s2, s3
-    sw t2, 0(t3)
-    add s0, s0, t2
-    addi t0, t0, 1
+    add t2, x0, a0 # t2 is the result of fun(source[k])
+    add t3, s2, s3  
+    sw t2, 0(t3)  # t3 is the addr of dest
+    add s0, s0, t2  # update sum, which is s0
+    addi t0, t0, 1 # k += 1
     jal x0, loop
 exit:
     add a0, x0, s0
