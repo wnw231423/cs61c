@@ -1,6 +1,6 @@
 [submodule "proj1"]
 	path = proj1
-	url = https://github.com/61c-teach/fa20-proj1-starter.git
+	url = git@github.com:wnw231423/cs61c-fa20-proj1.git
 [submodule "proj2"]
 	path = proj2
 	url = git@github.com:wnw231423/cs61c-fa20-proj2.git
