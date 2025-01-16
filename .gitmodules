@@ -4,3 +4,6 @@
 [submodule "proj2"]
 	path = proj2
 	url = git@github.com:wnw231423/cs61c-fa20-proj2.git
+[submodule "proj3"]
+	path = proj3
+	url = ./proj3
